@@ -28,6 +28,10 @@
       };
 
       recognition.start();
+      // Add this function to send result to App Inventor
+    function sendResultToApp(result) {
+      AppInventor.setWebViewString(result);
+    }
     </script>
     <textarea id="result" style="width:100%; height:100px;"></textarea>
   </body>
